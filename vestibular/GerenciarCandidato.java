@@ -29,7 +29,7 @@ public class GerenciarCandidato {
 
     public void excluirPeloNumero(int numeroMatricula){
         for (int i = 0; i < candidatos.size(); i ++) {
-            if (candidatos.get(i).getNumeroMatricula().equals(numeroMatricula)) {
+            if (candidatos.get(i).getNumeroMatricula() == numeroMatricula) {
                 candidatos.remove(i);
                 break;
             }
